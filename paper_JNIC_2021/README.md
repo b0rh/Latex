@@ -1,5 +1,5 @@
 # HOUSE: Marco de trabajo modular de arquitectura escalable y desacoplada para el uso de técnicas de fuzzing en HPC
-## (Descargar PDF)https://github.com/b0rh/Latex/blob/main/paper_JNIC_2021/HOUSE%20Marco%20de%20trabajo%20modular%20de%20arquitectura%20escalable%20y%20desacoplada%20para%20el%20uso%20de%20t%C3%A9cnicas%20de%20fuzzing%20en%20HPC.pdf)
+## [Descargar PDF][https://github.com/b0rh/Latex/blob/main/paper_JNIC_2021/HOUSE%20Marco%20de%20trabajo%20modular%20de%20arquitectura%20escalable%20y%20desacoplada%20para%20el%20uso%20de%20t%C3%A9cnicas%20de%20fuzzing%20en%20HPC.pdf]
 
 
 *DOI:* 10.18239/JORNADAS_2021.34.39 *Corpus ID:* 236708872
