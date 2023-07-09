@@ -1,0 +1,80 @@
+%%% PAQUETES  %%%
+
+
+%%% TODONOTES y definición 2cm de margen para que no se solapen añadido colores comentarios
+\setlength {\marginparwidth }{2cm} 
+\usepackage{todonotes}
+\usepackage[normalem]{ulem}
+
+\usepackage[normalem]{ulem}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Tildes y demás caracteres en español...
+%\usepackage[latin1]{inputenc}
+% o bien
+\usepackage[utf8]{inputenc}
+
+%%% Fuente Times...
+\usepackage{times}
+
+%%% Figuras en formato .png, .ps, pdf o eps
+\usepackage{graphicx}
+\usepackage{subfigure}
+\DeclareGraphicsExtensions{.png,.eps,.ps,.pdf}
+
+%%% Soporte graficos svg
+\usepackage{svg}
+
+%%% Formato y tipografía de URL, direcciones de correo...
+\usepackage{url}
+%\usepackage{hyperref}
+
+%%% Sección para definir explícitamente la separación de sílabas al final de una línea:
+\hyphenation{si-guien-do}
+
+%%% Secciones etc. en castellano
+\usepackage[spanish,es-tabla]{babel}
+
+%%% Paquete para poner hipervinculos más finos \href
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=black,
+    %%% Necesita su propia definicion de color
+    citecolor=dimgray,  
+    urlcolor=coolblack,
+}
+
+
+
+\usepackage{xcolor}
+
+%%% Paquete para comentarios
+\usepackage{verbatim}
+
+% Definiciones colores extra
+%% Ref: http://latexcolor.com/
+	\definecolor{coolblack}{rgb}{0.0, 0.18, 0.39}
+	\definecolor{dimgray}{rgb}{0.41, 0.41, 0.41}
+
+
+%%% Paquete para usar simbolos y scripts de dibujado
+\usepackage{tikz}
+\def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
+\usetikzlibrary{shapes,arrows}
+
+% Define Block styles
+\tikzstyle{decisionBL} = [diamond, draw, fill=blue!20,text width=10em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{blockBL} = [rectangle, draw, fill=blue!20,text width=9em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{blockYL} = [rectangle, draw, fill=yellow!20, text width=9em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{blockGR} = [rectangle, draw, fill=green!20, text width=9em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{blockRD} = [rectangle, draw, fill=red!20, text width=9em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{blockWH} = [rectangle, draw, fill=white!20, text width=9em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=4.5cm,minimum height=4em]
+
+%%% Para usar ficheros tex de infografias Inkscape
+\usepackage{pstricks}

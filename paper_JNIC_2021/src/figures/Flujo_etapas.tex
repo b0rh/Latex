@@ -1,0 +1,40 @@
+
+\begin{figure}[!ht]
+  \centering
+  % centering debería centrar adecuadamente la figura, así que, por norma general, no es necesario utilizar hspace
+  %\hspace*{-135pt}
+  \begin{tikzpicture}[node distance = 2cm, auto,
+  % Estas dos opciones de tikzpicture son para poder reescalar la imagen
+  transform shape, scale=0.8
+  ]
+    % nodes
+    \node [blockWH] (prep_env) {\Large Prepare environment};
+    \node [decisionBL, below of = prep_env, node distance = 3.5cm] (Hay_src) {\Large Is there source code available?};
+    \node [blockBL, right of = Hay_src, node distance = 5cm] (prep_src) {\Large Prepare source code};
+    \node [blockBL, below of = Hay_src, node distance = 3.5cm] (prep_bin) {\Large Prepare binary};
+    \node [blockBL, below of = prep_bin, node distance = 2cm] (prep_in) {\Large Prepare inputs};
+    \node [blockGR, below of = prep_in, node distance = 2cm] (pruebas) {\Large Fuzzing workload};
+    \node [blockYL, below of = pruebas, node distance = 2cm] (resultados) {\Large Results analysis workloads};
+
+    % edges
+    \path [line] (prep_env) -- (Hay_src);
+    \path [line] (Hay_src) -- node {Yes}(prep_src);
+    \path [line] (Hay_src) -- node {\Large No}(prep_bin);
+    \path [line] (prep_bin) -- (prep_in);
+    \path [line] (prep_src) -- (prep_bin);
+    \path [line] (prep_in) -- (pruebas);
+    \path [line] (pruebas) -- (resultados);
+
+  % Leyenda cuqui
+  \matrix [draw,every cell/.style={scale=0.6}] at (5,-10) {
+  \node [label=center:Phases/Steps] {}; \\
+  \node [blockWH,label=center:Common] {}; \\
+  \node [blockBL,label=center:Prefuzzing] {}; \\
+  \node [blockGR,label=center:Fuzzing] {}; \\
+  \node [blockYL,label=center:Postfuzzing] {}; \\
+};
+
+  \end{tikzpicture}
+  \caption{ Flujo etapas fuzzing y actividades principales. }
+  \label{fig:HOUSE_flow}
+\end{figure}

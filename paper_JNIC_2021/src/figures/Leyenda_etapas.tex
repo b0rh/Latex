@@ -1,0 +1,25 @@
+
+\begin{figure}[!ht]
+  \centering
+  %%\hspace*{-135pt}
+  \begin{tikzpicture}[node distance = 2cm, auto]
+    % nodes
+    \node [blockWH] (common) {\Large Common};
+    \node [blockBL, below of = common, node distance = 2cm] (prefuzz) {\Large Prefuzzing};
+    \node [blockGR, below of = prefuzz, node distance = 2cm] (fuzz) {\Large Fuzzing};
+    \node [blockYL, below of = fuzz, node distance = 2cm] (post) {\Large Postfuzzing};
+
+
+
+    % edges
+    %%\path [line] (prep_env) -- (Hay_src);
+    %%\path [line] (Hay_src) -- node {Si}(prep_src);
+    %%\path [line] (Hay_src) -- node {\Large no}(prep_bin);
+    %%\path [line] (prep_bin) -- (pruebas);
+    %%\path [line] (prep_src) -- (prep_bin);
+    %%\path [line] (prep_bin) -- (pruebas);
+    %%\path [line] (pruebas) -- (resultados);
+  \end{tikzpicture}
+  \caption{ Etapas fuzzing leyenda de color.}
+  \label{fig:HOUSE_steps_color-code}
+\end{figure}
