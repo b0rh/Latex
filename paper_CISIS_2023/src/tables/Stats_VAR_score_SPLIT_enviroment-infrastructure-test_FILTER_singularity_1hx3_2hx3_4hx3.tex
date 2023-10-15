@@ -1,0 +1,23 @@
+%% Source: Pruebas_sdo-ALLTEST+subtype.csv variable:score split:enviroment-infrastructrure-test filter: singularity and (1hx3 or 2hx3 or 4hx3) (Pruebas_singularity_1hx3_2hx3_4hx3-ALLTEST+subtype.csv) 
+
+\begin{table}[h]
+	\centering
+    \caption{Estadisticas descriptivas de comparativa entre infraestructuras sdo y hpc en pruebas de fuzzing usando el score medio de las ejecuciones con un unica tarea.}
+    \label{tab:stats_score_by_infra-test-unique}
+	{
+		\begin{tabular}{lrrrr}
+			\toprule
+			\multicolumn{1}{c}{} & \multicolumn{4}{c}{score} \\
+			\cline{2-5}
+			 & singularity-hpc-MI2 & singularity-hpc-TB3 & singularity-sdo-MI2 & singularity-sdo-TB3  \\
+			\cmidrule[0.4pt]{1-5}
+			Valid & $9$ & $9$ & $9$ & $9$  \\
+			Missing & $0$ & $0$ & $0$ & $0$  \\
+			Mean & $41.111$ & $106.000$ & $299.444$ & $412.667$  \\
+			Std. Deviation & $58.831$ & $53.374$ & $296.821$ & $228.065$  \\
+			Minimum & $0.000$ & $54.000$ & $25.000$ & $177.000$  \\
+			Maximum & $180.000$ & $192.000$ & $900.000$ & $713.000$  \\
+			\bottomrule
+		\end{tabular}
+	}
+\end{table}

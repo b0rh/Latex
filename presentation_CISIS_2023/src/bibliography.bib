@@ -1,0 +1,893 @@
+@inproceedings{rvfuzzer,
+  title={RVFuzzer: Finding Input Validation Bugs in Robotic Vehicles through Control-Guided Testing.},
+  author={Kim, Taegyu and Kim, Chung Hwan and Rhee, Junghwan and Fei, Fan and Tu, Zhan and Walkup, Gregory and Zhang, Xiangyu and Deng, Xinyan and Xu, Dongyan},
+  booktitle={USENIX Security Symposium},
+  pages={425--442},
+  year={2019}
+}
+
+
+@misc{abrt_doc_project_doc,
+  title = {Configuration \textemdash{} {{ABRT Project Documentation}}},
+  url = {https://abrt.readthedocs.io/en/latest/conf.html?highlight=BlackListedPaths},
+  urldate = {2021-03-14},
+  file = {/Users/bhr/Zotero/storage/PXMLBW9F/conf.html}
+}
+
+@misc{abrt_doc-redhat,
+  title = {Chapter~25.~{{Automatic Bug Reporting Tool}} ({{ABRT}}) {{Red Hat Enterprise Linux}} 7 | {{Red Hat Customer Portal}}},
+  url = {https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-abrt},
+  urldate = {2021-03-14},
+  file = {/Users/bhr/Zotero/storage/HNZA5Y53/ch-abrt.html}
+}
+
+@article{anal_datos,
+  title = {{{LEOPARD}}: {{Identifying Vulnerable Code}} for {{Vulnerability Assessment}} through {{Program Metrics}}},
+  author = {Du, Xiaoning and Chen, Bihuan and Li, Yuekang and Guo, Jianmin and Zhou, Yaqin and Liu, Yang and Jiang, Yu},
+  year = {2019},
+  doi = {10.1109/ICSE.2019.00024},
+  url = {http://arxiv.org/abs/1901.11479},
+  abstract = {Identifying potentially vulnerable locations in a code base is critical as a pre-step for effective vulnerability assessment; i.e., it can greatly help security experts put their time and effort to where it is needed most. Metric-based and pattern-based methods have been presented for identifying vulnerable code. The former relies on machine learning and cannot work well due to the severe imbalance between non-vulnerable and vulnerable code or lack of features to characterize vulnerabilities. The latter needs the prior knowledge of known vulnerabilities and can only identify similar but not new types of vulnerabilities. In this paper, we propose and implement a generic, lightweight and extensible framework, LEOPARD, to identify potentially vulnerable functions through program metrics. LEOPARD requires no prior knowledge about known vulnerabilities. It has two steps by combining two sets of systematically derived metrics. First, it uses complexity metrics to group the functions in a target application into a set of bins. Then, it uses vulnerability metrics to rank the functions in each bin and identifies the top ones as potentially vulnerable. Our experimental results on 11 real-world projects have demonstrated that, LEOPARD can cover 74.0\% of vulnerable functions by identifying 20\% of functions as vulnerable and outperform machine learning-based and static analysis-based techniques. We further propose three applications of LEOPARD for manual code review and fuzzing, through which we discovered 22 new bugs in real applications like PHP, radare2 and FFmpeg, and eight of them are new vulnerabilities.},
+  annotation = {\_eprint: 1901.11479 6 citations (Crossref) [2021-03-13] 22 citations (Semantic Scholar/DOI) [2021-03-13] 22 citations (Semantic Scholar/arXiv) [2021-03-13]},
+  file = {/Users/bhr/Zotero/storage/HGLEDAXX/Du et al. - 2020 - LEOPARD Identifying Vulnerable Code for Vulnerabi.pdf}
+}
+
+@article{aprend_auto,
+  title = {Neural {{Fuzzing}}: {{A Neural Approach}} to {{Generate Test Data}} for {{File Format Fuzzing}}},
+  author = {Nasrabadi, Morteza Zakeri and Parsa, Saeed and Kalaee, Akram},
+  year = {2018},
+  url = {http://arxiv.org/abs/1812.09961},
+  abstract = {This article is aimed at the design and implementation of a file format fuzzer. Files are significant inputs to the most of real-world applications. A substantial difficulty with generating input files as test data is to recon the underlying structure and format of the files. In order to distinguish pure data stored in a file from the meta-data describing the file format, a deep learning method based on a neural language model is proposed in this article. The resultant learned model could be applied as a hybrid test data generator, to generate and fuzz both the textual and none-textual sections of the input file. Moreover, the model could be applied to generate test data to fuzz both the meta-data and the ordinary data stored in the file. Our experiments with two known fuzzing tools, AFL and Learn\$\textbackslash backslash\$\&Fuzz, demonstrate the relatively high code coverage of our proposed method. The experiments also indicate simple neural language models provide a more accurate learning model, than the complicated encoder-decoder models.},
+  annotation = {\_eprint: 1812.09961 2 citations (Semantic Scholar/arXiv) [2021-03-13]},
+  file = {/Users/bhr/Zotero/storage/758JFT8H/Nasrabadi et al_2018_Neural Fuzzing.pdf},
+  keywords = {code coverage,deep learning,fuzzing,models,neural language,recurrent neural networks,test data generation}
+}
+
+@article{ASAN_ref-paper,
+  title = {{{AddressSanitizer}}: {{A Fast Address Sanity Checker}}},
+  author = {Serebryany, Konstantin and Bruening, Derek and Potapenko, Alexander and Vyukov, Dmitry},
+  year = {2012},
+  pages = {10},
+  abstract = {Memory access bugs, including buffer overflows and uses of freed heap memory, remain a serious problem for programming languages like C and C++. Many memory error detectors exist, but most of them are either slow or detect a limited set of bugs, or both.},
+  file = {/Users/bhr/Zotero/storage/2XMJXIJD/Serebryany et al. - AddressSanitizer A Fast Address Sanity Checker.pdf},
+  journal = {USENIX},
+  keywords = {⛔ No DOI found},
+  language = {en}
+}
+
+@misc{AWS_doc-slurm_plugin,
+  title = {{{AWS Plugin}} for {{Slurm}} - Repository},
+  author = {{Amazon}},
+  url = {https://github.com/aws-samples/aws-plugin-for-slurm},
+  abstract = {A sample integration of AWS services with Slurm},
+  file = {/Users/bhr/Zotero/storage/2WTGWT9U/Amazon - Unknown - AWS Plugin for Slurm - repository.html}
+}
+
+@misc{Azure_doc-CycleCloud_slurm,
+  title = {Azure {{CycleCloud}}},
+  author = {{Microsoft}},
+  year = {2021},
+  month = feb,
+  publisher = {{Microsoft}},
+  url = {https://docs.microsoft.com/en-us/azure/cyclecloud/slurm?view=cyclecloud-8},
+  abstract = {Azure CycleCloud is targeted at HPC administrators and users who want to deploy an HPC environment with a specific scheduler in mind \textendash{} commonly used schedulers such as Slurm, PBSPro,LSF, Grid Engine,and HTCondor aresupported out of the box. CycleCloud is thesister product to Azure Batch, which provides a Scheduler as aService on Azure.},
+  file = {/Users/bhr/Zotero/storage/KPAKBP99/Microsoft - Unknown - Azure CycleCloud.pdf}
+}
+
+@misc{BPMN_spec,
+  title = {Business {{Process Model}} and {{Notation}} ({{BPMN}}) {{Version}} 2.0.2},
+  author = {{OMG}},
+  year = {2013},
+  month = dec,
+  url = {https://www.omg.org/spec/BPMN/2.0.2/},
+  file = {/Users/bhr/Zotero/storage/DSLGV4SN/formal-13-12-09.pdf},
+  keywords = {analysts that create the initial drafts of the pro,and finally,BPMN creates a standardized bridge for the gap bet,formal/2013-12-09,from the business,implementation.,processes. Thus,technology that will perform those processes,The Object Management Group (OMG) has developed a,The primary goal of BPMN is to provide a notation,to the business people who will manage and monitor,to the technical developers responsible for implem}
+}
+
+@book{contexto_fuzzing,
+  title = {Fuzzing: Brute Force Vulnerabilty Discovery},
+  shorttitle = {Fuzzing},
+  author = {Sutton, Michael and Greene, Adam and Amini, Pedram},
+  year = {2007},
+  publisher = {{Addison-Wesley}},
+  address = {{Upper Saddle River, NJ}},
+  annotation = {OCLC: ocm86117714},
+  file = {/Users/bhr/Zotero/storage/ZSWQPNKA/Sutton Michael, Greene Adam - 2007 - Fuzzing Brute Force Vulnerability Discovery.pdf},
+  isbn = {978-0-321-44611-4},
+  keywords = {Computer networks,Computer security,Computer software,Development,Security measures},
+  lccn = {QA76.9.A25 S89 2007}
+}
+
+@article{continuacion_fuzzing,
+  title = {Fuzz {{Revisited}}: {{A Re}}-Examination of the {{Reliability}} of {{UNIX Utilities}} and {{Services}}},
+  author = {Miller, Barton P and Koski, David and Lee, Cjin Pheow and Maganty, Vivekananda and Murthy, Ravi and Natarajan, Ajitkumar and Steidl, Jeff},
+  year = {1995},
+  pages = {23},
+  abstract = {We have tested the reliability of a large collection of basic UNIX utility programs, X-Window applications and servers, and network services. We used a simple testing method of subjecting these programs to a random input stream. Our testing methods and tools are largely automatic and simple to use. We tested programs on nine versions of the UNIX operating system, including seven commercial systems and the freely-available GNU utilities and Linux. We report which programs failed on which systems, and identify and categorize the causes of these failures.},
+  file = {/Users/bhr/Zotero/storage/2355SVL8/Miller et al. - 1995 - Fuzz Revisited A Re-examination of the Reliabilit.pdf},
+  language = {en}
+}
+
+@misc{EDR_gartner,
+  title = {Endpoint {{Detection}} and {{Response Tool Architecture}} and {{Operations Practices}}},
+  author = {{Augusto Barros} and {Anton Chuvakin}},
+  url = {https://www.gartner.com/en/documents/3324517},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/RJT3LMWQ/3324517.html}
+}
+
+@inproceedings{edr_wuml,
+  title = {Endpoint {{Detection}} and {{Response}}: {{Why Use Machine Learning}}?},
+  shorttitle = {Endpoint {{Detection}} and {{Response}}},
+  booktitle = {2019 {{International Conference}} on {{Information}} and {{Communication Technology Convergence}} ({{ICTC}})},
+  author = {Sjarif, Nilam Nur Amir and Chuprat, Suriayati and Mahrin, Mohd Naz'ri and Ahmad, Noor Azurati and Ariffin, Aswami and Senan, Firham M and Zamani, Nazri Ahmad and Saupi, Afifah},
+  year = {2019},
+  month = oct,
+  pages = {283--288},
+  publisher = {{IEEE}},
+  address = {{Jeju Island, Korea (South)}},
+  doi = {10.1109/ICTC46691.2019.8939836},
+  url = {https://ieeexplore.ieee.org/document/8939836/},
+  urldate = {2021-03-13},
+  abstract = {Threats towards the cyberspace have becoming more aggressive, intelligent and some attack at real-time. These urged both researchers and practitioner to secure the cyberspace at the very root point, which refer to as the endpoint. The detection and response at endpoint must be able to protect at real-time as good as the attacker. In this paper, we reviewed the techniques used in endpoint detection and response. We discovered the trend have shifted from the traditional approaches to more intelligent way. Specifically, most proposed techniques focused on machine learnings. We also zoomed into these techniques and outline the advantages of these techniques.},
+  file = {/Users/bhr/Zotero/storage/9FZQ6XFR/Sjarif et al. - 2019 - Endpoint Detection and Response Why Use Machine L.pdf},
+  isbn = {978-1-72810-893-3},
+  language = {en}
+}
+
+@misc{ENISA_risk_security_ref,
+  title = {Risk {{Management}}: {{Implementation}} Principles and {{Inventories}} for {{Risk Management}}/{{Risk Assessment}} Methods and Tools "{{Survey}} of Existing {{Risk Management}} and {{Risk Assessment Methods}}") {{Conducted}} by the {{Technical Department}} of {{ENISA Section Risk Management}}},
+  author = {{ENISA}},
+  year = {2006},
+  abstract = {Executive Summary This report is the first ENISA deliverable 2006 in the area of Risk Management / Risk Assessment. Parts of this report constitute the deliverable defined in the ENISA Work Programme 2006 as: ``Survey of existing Risk Management and Risk Assessment Methods''. The purpose of this document is to address identified open problems in the area of Risk Management and to provide a road-map for addressing further open issues at a European level. This document contributes to solving the following problems: 1. low awareness of Risk Management activities within public and private sector organizations; 2. absence of a ``common language'' in the area of Risk Management to facilitate communication among stakeholders; 3. lack of surveys on existing methods, tools and good practices. Further identified open issues/needs in the area of Risk Management / Risk Assessment, such as interoperability of methods and integration with corporate governance, are presented by means of a road-map describing and prioritizing possible future actions to be performed in that area. Elements of work conducted within the ENISA ad hoc Working Group on technical and policy issues of Risk Assessment and Risk Management have been integrated into this document. Contact details: ENISA Technical Department, Section Risk Management, Dr. L. Marinos, Senior Expert Risk Management, Jani Arnell, Expert Risk Management, e-mail: RiskMngt@enisa.europa.eu},
+  file = {/Users/bhr/Zotero/storage/33SGUFTH/ENISA - 2006 - Risk Management Implementation principles and Inventories for Risk ManagementRisk Assessment methods and tools Survey of.pdf}
+}
+
+@misc{ens_ref-boe,
+  title = {{{BOE}}-{{A}}-2010-1330 {{Real Decreto}} 3/2010, de 8 de Enero, Por El Que Se Regula El {{Esquema Nacional}} de {{Seguridad}} En El \'Ambito de La {{Administraci\'on Electr\'onica}}.},
+  url = {https://www.boe.es/buscar/act.php?id=BOE-A-2010-1330&b=23&tn=1&p=20151104},
+  urldate = {2021-03-27},
+  file = {/Users/bhr/Zotero/storage/UBFVJBR6/act.html},
+  journal = {BOE.es - BOE-A-2010-1330 Real Decreto 3/2010, de 8 de enero, por el que se regula el Esquema Nacional de Seguridad en el \'ambito de la Administraci\'on Electr\'onica.}
+}
+
+@misc{fda_ref-GlossaryComputerSystem,
+  title = {Glossary of {{Computer System Software Development Terminology}} (8/95) | {{FDA}}},
+  url = {https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/inspection-guides/glossary-computer-system-software-development-terminology-895},
+  urldate = {2021-03-14},
+  file = {/Users/bhr/Zotero/storage/SSE7FCWE/glossary-computer-system-software-development-terminology-895.html}
+}
+
+@inproceedings{fuzz_analisis-resultados,
+  title = {Using {{Machine Learning}} to {{Classify Test Outcomes}}},
+  booktitle = {2019 {{IEEE International Conference On Artificial Intelligence Testing}} ({{AITest}})},
+  author = {Roper, Marc},
+  year = {2019},
+  month = apr,
+  pages = {99--100},
+  publisher = {{IEEE}},
+  address = {{Newark, CA, USA}},
+  doi = {10/gjf27f},
+  url = {https://ieeexplore.ieee.org/document/8718223/},
+  urldate = {2021-03-14},
+  abstract = {When testing software it has been shown that there are substantial benefits to be gained from approaches which exercise unusual or unexplored interactions with a system \textendash techniques such as random testing, fuzzing, and exploratory testing. However, such approaches have a drawback in that the outputs of the tests need to be manually checked for correctness, representing a significant burden for the software engineer. This paper presents a strategy to support the process of identifying which tests have passed or failed by combining clustering and semi-supervised learning. We have shown that by using machine learning it is possible to cluster test cases in such a way that those corresponding to failures concentrate into smaller clusters. Examining the test outcomes in clustersize order has the effect of prioritising the results: those that are checked early on have a much higher probability of being a failing test. As the software engineer examines the results (and confirms or refutes the initial classification), this information is employed to bootstrap a secondary learner to further improve the accuracy of the classification of the (as yet) unchecked tests. Results from experimenting with a range of systems demonstrate the substantial benefits that can be gained from this strategy, and how remarkably accurate test output classifications can be derived from examining a relatively small proportion of results.},
+  file = {/Users/bhr/Zotero/storage/M44YKC69/Roper - 2019 - Using Machine Learning to Classify Test Outcomes.pdf},
+  isbn = {978-1-72810-492-8},
+  language = {en}
+}
+
+@inproceedings{fuzz_evo-tec-complex,
+  title = {Singularity: Pattern Fuzzing for Worst Case Complexity},
+  shorttitle = {Singularity},
+  booktitle = {Proceedings of the 2018 26th {{ACM Joint Meeting}} on {{European Software Engineering Conference}} and {{Symposium}} on the {{Foundations}} of {{Software Engineering}}},
+  author = {Wei, Jiayi and Chen, Jia and Feng, Yu and Ferles, Kostas and Dillig, Isil},
+  year = {2018},
+  month = oct,
+  pages = {213--223},
+  publisher = {{ACM}},
+  address = {{Lake Buena Vista FL USA}},
+  doi = {10/gjf2dt},
+  url = {https://dl.acm.org/doi/10.1145/3236024.3236039},
+  urldate = {2021-03-14},
+  abstract = {We describe a new blackbox complexity testing technique for determining the worst-case asymptotic complexity of a given application. The key idea is to look for an input pattern \textemdash rather than a concrete input\textemdash{} that maximizes the asymptotic resource usage of the target program. Because input patterns can be described concisely as programs in a restricted language, our method transforms the complexity testing problem to optimal program synthesis. In particular, we express these input patterns using a new model of computation called Recurrent Computation Graph (RCG) and solve the optimal synthesis problem by developing a genetic programming algorithm that operates on RCGs.},
+  file = {/Users/bhr/Zotero/storage/QVJEZ7D5/Wei et al. - 2018 - Singularity pattern fuzzing for worst case comple.pdf},
+  isbn = {978-1-4503-5573-5},
+  language = {en}
+}
+
+@inproceedings{fuzz_evo-tec-comportamiento,
+  title = {{{IntelliDroid}}: {{A Targeted Input Generator}} for the {{Dynamic Analysis}} of {{Android Malware}}},
+  shorttitle = {{{IntelliDroid}}},
+  booktitle = {Proceedings 2016 {{Network}} and {{Distributed System Security Symposium}}},
+  author = {Wong, Michelle Y. and Lie, David},
+  year = {2016},
+  publisher = {{Internet Society}},
+  address = {{San Diego, CA}},
+  doi = {10/gjf2dw},
+  url = {https://www.ndss-symposium.org/wp-content/uploads/2017/09/intellidroid-targeted-input-generator-dynamic-analysis-android-malware.pdf},
+  urldate = {2021-03-14},
+  abstract = {While dynamic malware analysis methods generally provide better precision than purely static methods, they have the key drawback that they can only detect malicious behavior if it is executed during analysis. This requires inputs that trigger the malicious behavior to be applied during execution. All current methods, such as hard-coded tests, random fuzzing and concolic testing, can provide good coverage but are inefficient because they are unaware of the specific capabilities of the dynamic analysis tool. In this work, we introduce IntelliDroid, a generic Android input generator that can be configured to produce inputs specific to a dynamic analysis tool, for the analysis of any Android application. Furthermore, IntelliDroid is capable of determining the precise order that the inputs must be injected, and injects them at what we call the device-framework interface such that system fidelity is preserved. This enables it to be paired with full-system dynamic analysis tools such as TaintDroid. Our experiments demonstrate that IntelliDroid requires an average of 72 inputs and only needs to execute an average of 5\% of the application to detect malicious behavior. When evaluated on 75 instances of malicious behavior, IntelliDroid successfully identifies the behavior, extracts path constraints, and executes the malicious code in all but 5 cases. On average, IntelliDroid performs these tasks in 138.4 seconds per application.},
+  file = {/Users/bhr/Zotero/storage/979LDRIC/Wong and Lie - 2016 - IntelliDroid A Targeted Input Generator for the D.pdf},
+  isbn = {978-1-891562-41-9},
+  language = {en}
+}
+
+@inproceedings{fuzz_evo-tec-ejec_simbolica_dina,
+  title = {Fitness-Guided Path Exploration in Dynamic Symbolic Execution},
+  booktitle = {2009 {{IEEE}}/{{IFIP International Conference}} on {{Dependable Systems}} \& {{Networks}}},
+  author = {Xie, Tao and Tillmann, Nikolai and {de Halleux}, Jonathan and Schulte, Wolfram},
+  year = {2009},
+  month = jun,
+  pages = {359--368},
+  publisher = {{IEEE}},
+  address = {{Lisbon, Portugal}},
+  doi = {10/cdtj2q},
+  url = {http://ieeexplore.ieee.org/document/5270315/},
+  urldate = {2021-03-14},
+  abstract = {Dynamic symbolic execution is a structural testing technique that systematically explores feasible paths of the program under test by running the program with different test inputs to improve code coverage. To address the spaceexplosion issue in path exploration, we propose a novel approach called Fitnex, a search strategy that uses statedependent fitness values (computed through a fitness function) to guide path exploration. The fitness function measures how close an already discovered feasible path is to a particular test target (e.g., covering a not-yet-covered branch). Our new fitness-guided search strategy is integrated with other strategies that are effective for exploration problems where the fitness heuristic fails. We implemented the new approach in Pex, an automated structural testing tool developed at Microsoft Research. We evaluated our new approach by comparing it with existing search strategies. The empirical results show that our approach is effective since it consistently achieves high code coverage faster than existing search strategies.},
+  file = {/Users/bhr/Zotero/storage/WGVQ6X9L/Xie et al. - 2009 - Fitness-guided path exploration in dynamic symboli.pdf},
+  isbn = {978-1-4244-4422-9},
+  language = {en}
+}
+
+@inproceedings{fuzz_evo-tec-firma,
+  title = {Robust Signatures for Kernel Data Structures},
+  booktitle = {Proceedings of the 16th {{ACM}} Conference on {{Computer}} and Communications Security - {{CCS}} '09},
+  author = {{Dolan-Gavitt}, Brendan and Srivastava, Abhinav and Traynor, Patrick and Giffin, Jonathon},
+  year = {2009},
+  pages = {566},
+  publisher = {{ACM Press}},
+  address = {{Chicago, Illinois, USA}},
+  doi = {10/bndg3q},
+  url = {http://portal.acm.org/citation.cfm?doid=1653662.1653730},
+  urldate = {2021-03-14},
+  abstract = {Kernel-mode rootkits hide objects such as processes and threads using a technique known as Direct Kernel Object Manipulation (DKOM). Many forensic analysis tools attempt to detect these hidden objects by scanning kernel memory with handmade signatures; however, such signatures are brittle and rely on non-essential features of these data structures, making them easy to evade. In this paper, we present an automated mechanism for generating signatures for kernel data structures and show that these signatures are robust: attempts to evade the signature by modifying the structure contents will cause the OS to consider the object invalid. Using dynamic analysis, we profile the target data structure to determine commonly used fields, and we then fuzz those fields to determine which are essential to the correct operation of the OS. These fields form the basis of a signature for the data structure. In our experiments, our new signature matched the accuracy of existing scanners for traditional malware and found processes hidden with our prototype rootkit that all current signatures missed. Our techniques significantly increase the difficulty of hiding objects from signature scanning.},
+  file = {/Users/bhr/Zotero/storage/6MJPJPAB/Dolan-Gavitt et al. - 2009 - Robust signatures for kernel data structures.pdf},
+  isbn = {978-1-60558-894-0},
+  language = {en}
+}
+
+@incollection{fuzz_evo-tec-gem_tc_grama,
+  title = {{{IFuzzer}}: {{An Evolutionary Interpreter Fuzzer Using Genetic Programming}}},
+  shorttitle = {{{IFuzzer}}},
+  booktitle = {Computer {{Security}} \textendash{} {{ESORICS}} 2016},
+  author = {Veggalam, Spandan and Rawat, Sanjay and Haller, Istvan and Bos, Herbert},
+  editor = {Askoxylakis, Ioannis and Ioannidis, Sotiris and Katsikas, Sokratis and Meadows, Catherine},
+  year = {2016},
+  volume = {9878},
+  pages = {581--601},
+  publisher = {{Springer International Publishing}},
+  address = {{Cham}},
+  doi = {10.1007/978-3-319-45744-4_29},
+  url = {http://link.springer.com/10.1007/978-3-319-45744-4_29},
+  urldate = {2021-03-14},
+  abstract = {We present an automated evolutionary fuzzing technique to find bugs in JavaScript interpreters. Fuzzing is an automated black box testing technique used for finding security vulnerabilities in the software by providing random data as input. However, in the case of an interpreter, fuzzing is challenging because the inputs are piece of codes that should be syntactically/semantically valid to pass the interpreter's elementary checks. On the other hand, the fuzzed input should also be uncommon enough to trigger exceptional behavior in the interpreter, such as crashes, memory leaks and failing assertions. In our approach, we use evolutionary computing techniques, specifically genetic programming, to guide the fuzzer in generating uncommon input code fragments that may trigger exceptional behavior in the interpreter. We implement a prototype named IFuzzer to evaluate our technique on real-world examples. IFuzzer uses the language grammar to generate valid inputs. We applied IFuzzer first on an older version of the JavaScript interpreter of Mozilla (to allow for a fair comparison to existing work) and found 40 bugs, of which 12 were exploitable. On subsequently targeting the latest builds of the interpreter, IFuzzer found 17 bugs, of which four were security bugs.},
+  file = {/Users/bhr/Zotero/storage/TFD7LDUE/Veggalam et al. - 2016 - IFuzzer An Evolutionary Interpreter Fuzzer Using .pdf},
+  isbn = {978-3-319-45743-7 978-3-319-45744-4},
+  language = {en}
+}
+
+@inproceedings{fuzz_ref_BF-bva,
+  title = {Testing Software Components Using Boundary Value Analysis},
+  booktitle = {Proceedings of the 20th {{IEEE Instrumentation Technology Conference}} ({{Cat No 03CH37412}}) {{EURMIC}}-03},
+  author = {{Muthu Ramachandran}},
+  year = {2003},
+  pages = {94--98},
+  publisher = {{IEEE}},
+  address = {{Belek-Antalya, Turkey}},
+  doi = {10.1109/EURMIC.2003.1231572.},
+  url = {https://ieeexplore.ieee.org/abstract/document/1231572},
+  urldate = {2021-03-14},
+  file = {/Users/bhr/Zotero/storage/BTRDTJZQ/Muthu Ramachandran_2003_Testing software components using boundary value analysis.pdf}
+}
+
+@book{fuzz_ref_BF-testing,
+  title = {The Art of Software Testing},
+  author = {Myers, Glenford J. and Sandler, Corey and Badgett, Tom},
+  year = {2012},
+  edition = {3rd ed},
+  publisher = {{John Wiley \& Sons}},
+  address = {{Hoboken, N.J}},
+  annotation = {OCLC: ocn728656684},
+  file = {/Users/bhr/Zotero/storage/M5AIQBN8/The Art of Software Testing, 3rd Edition ( PDFDrive ).pdf},
+  isbn = {978-1-118-03196-4 978-1-118-13313-2 978-1-118-13314-9},
+  keywords = {Computer software,Debugging in computer science,Testing},
+  lccn = {QA76.76.T48 M894 2012}
+}
+
+@book{fuzz_ref_sec-qa_sw,
+  title = {Fuzzing for Software Security Testing and Quality Assurance},
+  editor = {Takanen, Ari and DeMott, Jared and Miller, Charles and Kettunen, Atte},
+  year = {2018},
+  edition = {2 ed.},
+  publisher = {{Artech House}},
+  address = {{Norwood, MA}},
+  annotation = {OCLC: on1005685377},
+  file = {/Users/bhr/Zotero/storage/H8LLCLJA/Takanen et al_2018_Fuzzing for software security testing and quality assurance.pdf;/Users/bhr/Zotero/storage/SFYCJKFE/Fuzzing.pdf},
+  isbn = {978-1-60807-850-9},
+  keywords = {Computer networks,Computer security,Computer software,Development,Security measures},
+  lccn = {QA76.9.A25 F89 2018},
+  series = {Artech {{House}} Information Security and Privacy Series}
+}
+
+@article{fuzz_ref_WF-auto,
+  title = {Automated {{Whitebox Fuzz Testing}}},
+  author = {Godefroid, Patrice and Levin, Michael Y and Molnar, David},
+  year = {2008},
+  month = jan,
+  pages = {17},
+  abstract = {Fuzz testing is an effective technique for finding security vulnerabilities in software. Traditionally, fuzz testing tools apply random mutations to well-formed inputs of a program and test the resulting values. We present an alternative whitebox fuzz testing approach inspired by recent advances in symbolic execution and dynamic test generation. Our approach records an actual run of the program under test on a well-formed input, symbolically evaluates the recorded trace, and gathers constraints on inputs capturing how the program uses these. The collected constraints are then negated one by one and solved with a constraint solver, producing new inputs that exercise different control paths in the program. This process is repeated with the help of a code-coverage maximizing heuristic designed to find defects as fast as possible. We have implemented this algorithm in SAGE (Scalable, Automated, Guided Execution), a new tool employing x86 instruction-level tracing and emulation for whitebox fuzzing of arbitrary file-reading Windows applications. We describe key optimizations needed to make dynamic test generation scale to large input files and long execution traces with hundreds of millions of instructions. We then present detailed experiments with several Windows applications. Notably, without any format-specific knowledge, SAGE detects the MS07-017 ANI vulnerability, which was missed by extensive blackbox fuzzing and static analysis tools. Furthermore, while still in an early stage of development, SAGE has already discovered 30+ new bugs in large shipped Windows applications including image processors, media players, and file decoders. Several of these bugs are potentially exploitable memory access violations.},
+  file = {/Users/bhr/Zotero/storage/2MPQZCH3/Godefroid et al. - Automated Whitebox Fuzz Testing.pdf},
+  journal = {ResearchGate},
+  language = {en}
+}
+
+@inproceedings{fuzz_ref_WF-general,
+  title = {Taint-Based Directed Whitebox Fuzzing},
+  booktitle = {2009 {{IEEE}} 31st {{International Conference}} on {{Software Engineering}}},
+  author = {Ganesh, Vijay and Leek, Tim and Rinard, Martin},
+  year = {2009},
+  pages = {474--484},
+  publisher = {{IEEE}},
+  address = {{Vancouver, BC, Canada}},
+  doi = {10/cnsm2v},
+  url = {http://ieeexplore.ieee.org/document/5070546/},
+  urldate = {2021-03-14},
+  abstract = {We present a new automated white box fuzzing technique and a tool, BuzzFuzz, that implements this technique. Unlike standard fuzzing techniques, which randomly change parts of the input file with little or no information about the underlying syntactic structure of the file, BuzzFuzz uses dynamic taint tracing to automatically locate regions of original seed input files that influence values used at key program attack points (points where the program may contain an error). BuzzFuzz then automatically generates new fuzzed test input files by fuzzing these identified regions of the original seed input files. Because these new test files typically preserve the underlying syntactic structure of the original seed input files, they make it past the initial input parsing components to exercise code deep within the semantic core of the computation.},
+  file = {/Users/bhr/Zotero/storage/JFLWCPKC/Ganesh et al. - 2009 - Taint-based directed whitebox fuzzing.pdf},
+  isbn = {978-1-4244-3453-4},
+  language = {en}
+}
+
+@misc{fuzz_tool_afl,
+  title = {{{AFL}} - American Fuzzy Lop},
+  author = {{Micha\l{} Zalewski}},
+  url = {https://lcamtuf.coredump.cx/afl/},
+  urldate = {2021-03-28},
+  file = {/Users/bhr/Zotero/storage/K8VKQS7A/afl.html}
+}
+
+@misc{fuzz_tool_afl++,
+  title = {{{AFLplusplus}} Is the Daughter of the {{American Fuzzy Lop}} Fuzzer by {{Michal}} ``Lcamtuf'' {{Zalewski}}},
+  url = {https://aflplus.plus/},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/4HNYBLCF/aflplus.plus.html}
+}
+
+@article{fuzz_tool_afl++_paper,
+  title = {{{AFL}}++: {{Combining Incremental Steps}} of {{Fuzzing Research}}},
+  author = {Fioraldi, Andrea and Maier, Dominik and Ei{\ss}feldt, Heiko and Heuse, Marc},
+  year = {2020},
+  pages = {12},
+  abstract = {In this paper, we present AFL++, a community-driven opensource tool that incorporates state-of-the-art fuzzing research, to make the research comparable, reproducible, combinable and \textemdash{} most importantly \textendash{} useable. It offers a variety of novel features, for example its Custom Mutator API, able to extend the fuzzing process at many stages. With it, mutators for specific targets can also be written by experienced security testers. We hope for AFL++ to become a new baseline tool not only for current, but also for future research, as it allows to test new techniques quickly, and evaluate not only the effectiveness of the single technique versus the state-of-theart, but also in combination with other techniques. The paper gives an evaluation of hand-picked fuzzing technologies \textemdash shining light on the fact that while each novel fuzzing method can increase performance in some targets \textemdash{} it decreases performance for other targets. This is an insight future fuzzing research should consider in their evaluations.},
+  file = {/Users/bhr/Zotero/storage/YU3ESD5U/Fioraldi et al. - AFL++ Combining Incremental Steps of Fuzzing Rese.pdf},
+  journal = {USENIX},
+  keywords = {⛔ No DOI found},
+  language = {en}
+}
+
+@misc{fuzz_tool_BFF,
+  title = {{{CERT BFF}}},
+  year = {2016},
+  month = oct,
+  url = {https://resources.sei.cmu.edu/library/asset-view.cfm?assetID=507974},
+  urldate = {2021-03-13},
+  abstract = {The CERT Basic Fuzzing Framework (BFF) is a software-testing tool that performs mutational fuzzing on software that consumes file input. (Mutational fuzzing is the act of taking well-formed input data and corrupting it in various ways, looking for cases that cause crashes.) The BFF automatically collects test cases that cause software to crash in unique ways, and debugs information associated with the crashes.},
+  file = {/Users/bhr/Zotero/storage/W6FVRK22/asset-view.html}
+}
+
+@misc{fuzz_tool_radamsa,
+  title = {Radamsa Source Code Repository},
+  author = {{Aki Helin}},
+  url = {https://gitlab.com/akihe/radamsa},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/EKWJDZUQ/radamsa.html}
+}
+
+@inproceedings{fuzzing_antifuzz,
+  title = {{{ANTIFUZZ}}: {{Impeding Fuzzing Audits}} of {{Binary Executables}}},
+  booktitle = {28th {{USENIX Security Symposium}}},
+  author = {G{\"u}ler, Emre and Aschermann, Cornelius and Abbasi, Ali and Holz, Thorsten},
+  year = {2019},
+  month = aug,
+  pages = {18},
+  publisher = {{Usenix Association}},
+  abstract = {A general defense strategy in computer security is to increase the cost of successful attacks in both computational resources as well as human time. In the area of binary security, this is commonly done by using obfuscation methods to hinder reverse engineering and the search for software vulnerabilities. However, recent trends in automated bug finding changed the modus operandi. Nowadays it is very common for bugs to be found by various fuzzing tools. Due to ever-increasing amounts of automation and research on better fuzzing strategies, large-scale, dragnet-style fuzzing of many hundreds of targets becomes viable. As we show, current obfuscation techniques are aimed at increasing the cost of human understanding and do little to slow down fuzzing.},
+  file = {/Users/bhr/Zotero/storage/7LPJZBKH/Güler et al. - ANTIFUZZ Impeding Fuzzing Audits of Binary Execut.pdf},
+  isbn = {978-1-939133-06-9},
+  keywords = {⛔ No DOI found},
+  language = {en}
+}
+
+@article{fuzzing_Compositional,
+  title = {Compositional {{Fuzzing Aided}} by {{Targeted Symbolic Execution}}},
+  author = {Ognawala, Saahil and Kilger, Fabian and Pretschner, Alexander},
+  year = {2019},
+  month = oct,
+  url = {http://arxiv.org/abs/1903.02981},
+  urldate = {2021-03-13},
+  abstract = {Guided fuzzing has, in recent years, been able to uncover many new vulnerabilities in real-world software due to its fast input mutation strategies guided by path-coverage. However, most fuzzers are unable to achieve high coverage in deeper parts of programs. Moreover, fuzzers heavily rely on the diversity of the seed inputs, often manually provided, to be able to produce meaningful results. In this paper, we present Wildfire, a novel open-source compositional fuzzing framework. Wildfire finds vulnerabilities by fuzzing isolated functions in a Cprogram and, then, using targeted symbolic execution it determines the feasibility of exploitation for these vulnerabilities. Based on our evaluation of 23 open-source programs (nearly 1 million LOC), we show that Wildfire, as a result of the increased coverage, finds more true-positives than baseline symbolic execution and fuzzing tools, as well as state-of-the-art coverage-guided tools, in only 10\% of the analysis time taken by them. Additionally, Wildfire finds many other potential vulnerabilities whose feasibility can be determined compositionally to confirm if they are false-positives. Wildfire could also reproduce all of the known vulnerabilities and found several previously-unknown vulnerabilities in three open-source libraries.},
+  archiveprefix = {arXiv},
+  eprint = {1903.02981},
+  eprinttype = {arxiv},
+  file = {/Users/bhr/Zotero/storage/W8TTWF6B/Ognawala et al. - 2019 - Compositional Fuzzing Aided by Targeted Symbolic E.pdf},
+  journal = {arXiv:1903.02981 [cs]},
+  keywords = {Computer Science - Software Engineering},
+  language = {en},
+  primaryclass = {cs}
+}
+
+@article{fuzzing_extensionAFL,
+  title = {Superion: {{Grammar}}-{{Aware Greybox Fuzzing}}},
+  author = {Wang, Junjie and Chen, Bihuan and Wei, Lei and Liu, Yang},
+  year = {2018},
+  url = {http://arxiv.org/abs/1812.01197},
+  abstract = {In recent years, coverage-based greybox fuzzing has proven itself to be one of the most effective techniques for finding security bugs in practice. Particularly, American Fuzzy Lop (AFL for short) is deemed to be a great success in fuzzing relatively simple test inputs. Unfortunately, when it meets structured test inputs such as XML and JavaScript, those grammar-blind trimming and mutation strategies in AFL hinder the effectiveness and efficiency. To this end, we propose a grammar-aware coverage-based greybox fuzzing approach to fuzz programs that process structured inputs. Given the grammar (which is often publicly available) of test inputs, we introduce a grammar-aware trimming strategy to trim test inputs at the tree level using the abstract syntax trees (ASTs) of parsed test inputs. Further, we introduce two grammar-aware mutation strategies (i.e., enhanced dictionary-based mutation and tree-based mutation). Specifically, tree-based mutation works via replacing subtrees using the ASTs of parsed test inputs. Equipped with grammar-awareness, our approach can carry the fuzzing exploration into width and depth. We implemented our approach as an extension to AFL, named Superion; and evaluated the effectiveness of Superion on real-life large-scale programs (a XML engine libplist and three JavaScript engines WebKit, Jerryscript and ChakraCore). Our results have demonstrated that Superion can improve the code coverage (i.e., 16.7\% and 8.8\% in line and function coverage) and bug-finding capability (i.e., 31 new bugs, among which we discovered 21 new vulnerabilities with 16 CVEs assigned and 3.2K USD bug bounty rewards received) over AFL and jsfunfuzz. We also demonstrated the effectiveness of our grammar-aware trimming and mutation.},
+  annotation = {\_eprint: 1812.01197},
+  file = {/Users/bhr/Zotero/storage/UXAC2IGV/Wang et al_2018_Superion.pdf}
+}
+
+@article{fuzzing_IN-gen,
+  title = {Format-Aware {{Learn}}\&{{Fuzz}}: {{Deep Test Data Generation}} for {{Efficient Fuzzing}}},
+  shorttitle = {Format-Aware {{Learn}}\&{{Fuzz}}},
+  author = {Nasrabadi, Morteza Zakeri and Parsa, Saeed and Kalaee, Akram},
+  year = {2021},
+  month = mar,
+  volume = {33},
+  pages = {1497--1513},
+  issn = {0941-0643, 1433-3058},
+  doi = {10.1007/s00521-020-05039-7},
+  url = {http://arxiv.org/abs/1812.09961},
+  urldate = {2021-03-13},
+  abstract = {This article is aimed at the design and implementation of a file format fuzzer. Files are significant inputs to the most of real-world applications. A substantial difficulty with generating input files as test data is to recon the underlying structure and format of the files. In order to distinguish pure data stored in a file from the meta-data describing the file format, a deep learning method based on a neural language model is proposed in this article. The resultant learned model could be applied as a hybrid test data generator, to generate and fuzz both the textual and none-textual sections of the input file. Moreover, the model could be applied to generate test data to fuzz both the meta-data and the ordinary data stored in the file. Our experiments with two known fuzzing tools, AFL and Learn\&Fuzz, demonstrate the relatively high code coverage of our proposed method. The experiments also indicate simple neural language models provide a more accurate learning model, than the complicated encoder-decoder models.},
+  annotation = {0 citations (Crossref) [2021-03-14]},
+  archiveprefix = {arXiv},
+  eprint = {1812.09961},
+  eprinttype = {arxiv},
+  file = {/Users/bhr/Zotero/storage/4WCAHFHL/1812.09961-3.pdf},
+  journal = {Neural Computing and Applications},
+  keywords = {Computer Science - Software Engineering},
+  language = {en},
+  number = {5}
+}
+
+@article{fuzzing_optimizacion,
+  title = {Optimizing Seed Inputs in Fuzzing with Machine Learning},
+  author = {Cheng, Liang and Zhang, Yang and Zhang, Yi and Wu, Chen and Li, Zhangtan and Fu, Yu and Li, Haisheng},
+  year = {2019},
+  pages = {1--2},
+  url = {http://arxiv.org/abs/1902.02538},
+  abstract = {The success of a fuzzing campaign is heavily depending on the quality of seed inputs used for test generation. It is however challenging to compose a corpus of seed inputs that enable high code and behavior coverage of the target program, especially when the target program requires complex input formats such as PDF files. We present a machine learning based framework to improve the quality of seed inputs for fuzzing programs that take PDF files as input. Given an initial set of seed PDF files, our framework utilizes a set of neural networks to 1) discover the correlation between these PDF files and the execution in the target program, and 2) leverage such correlation to generate new seed files that more likely explore new paths in the target program. Our experiments on a set of widely used PDF viewers demonstrate that the improved seed inputs produced by our framework could significantly increase the code coverage of the target program and the likelihood of detecting program crashes.},
+  annotation = {\_eprint: 1902.02538},
+  file = {/Users/bhr/Zotero/storage/3FV5JMFW/Cheng et al_2019_Optimizing seed inputs in fuzzing with machine learning.pdf}
+}
+
+@article{fuzzing_SOA,
+  title = {The {{Art}}, {{Science}}, and {{Engineering}} of {{Fuzzing}}: {{A Survey}}},
+  shorttitle = {The {{Art}}, {{Science}}, and {{Engineering}} of {{Fuzzing}}},
+  author = {Manes, Valentin J. M. and Han, HyungSeok and Han, Choongwoo and Cha, Sang Kil and Egele, Manuel and Schwartz, Edward J. and Woo, Maverick},
+  year = {2019},
+  month = apr,
+  url = {http://arxiv.org/abs/1812.00140},
+  urldate = {2021-03-13},
+  abstract = {Among the many software vulnerability discovery techniques available today, fuzzing has remained highly popular due to its conceptual simplicity, its low barrier to deployment, and its vast amount of empirical evidence in discovering real-world software vulnerabilities. At a high level, fuzzing refers to a process of repeatedly running a program with generated inputs that may be syntactically or semantically malformed. While researchers and practitioners alike have invested a large and diverse effort towards improving fuzzing in recent years, this surge of work has also made it difficult to gain a comprehensive and coherent view of fuzzing. To help preserve and bring coherence to the vast literature of fuzzing, this paper presents a unified, general-purpose model of fuzzing together with a taxonomy of the current fuzzing literature. We methodically explore the design decisions at every stage of our model fuzzer by surveying the related literature and innovations in the art, science, and engineering that make modern-day fuzzers effective.},
+  archiveprefix = {arXiv},
+  eprint = {1812.00140},
+  eprinttype = {arxiv},
+  file = {/Users/bhr/Zotero/storage/93FFVAL8/Manes et al. - 2019 - The Art, Science, and Engineering of Fuzzing A Su.pdf;/Users/bhr/Zotero/storage/YDWW93D8/08863940.pdf},
+  journal = {arXiv:1812.00140 [cs]},
+  keywords = {Computer Science - Cryptography and Security,Computer Science - Software Engineering},
+  language = {en},
+  primaryclass = {cs}
+}
+
+@article{fuzzing_V-Fuzz,
+  title = {V-{{Fuzz}}: {{Vulnerability}}-{{Oriented Evolutionary Fuzzing}}},
+  author = {Li, Yuwei and Ji, Shouling and Lv, Chenyang and Chen, Yuan and Chen, Jianhai and Gu, Qinchen and Wu, Chunming},
+  year = {2019},
+  pages = {1--16},
+  url = {http://arxiv.org/abs/1901.01142},
+  abstract = {Fuzzing is a technique of finding bugs by executing a software recurrently with a large number of abnormal inputs. Most of the existing fuzzers consider all parts of a software equally, and pay too much attention on how to improve the code coverage. It is inefficient as the vulnerable code only takes a tiny fraction of the entire code. In this paper, we design and implement a vulnerability-oriented evolutionary fuzzing prototype named V-Fuzz, which aims to find bugs efficiently and quickly in a limited time. V-Fuzz consists of two main components: a neural network-based vulnerability prediction model and a vulnerability-oriented evolutionary fuzzer. Given a binary program to V-Fuzz, the vulnerability prediction model will give a prior estimation on which parts of the software are more likely to be vulnerable. Then, the fuzzer leverages an evolutionary algorithm to generate inputs which tend to arrive at the vulnerable locations, guided by the vulnerability prediction result. Experimental results demonstrate that V-Fuzz can find bugs more efficiently than state-of-the-art fuzzers. Moreover, V-Fuzz has discovered 10 CVEs, and 3 of them are newly discovered. We reported the new CVEs, and they have been confirmed and fixed.},
+  annotation = {\_eprint: 1901.01142},
+  file = {/Users/bhr/Zotero/storage/BKLB7FPM/Li et al. - 2019 - V-Fuzz Vulnerability-Oriented Evolutionary Fuzzin.pdf}
+}
+
+@misc{google_fuzz,
+  title = {Google {{Online Security Blog}}: {{Open}} Sourcing {{ClusterFuzz}}},
+  author = {{Abhishek Arya} and {Oliver Chang} and {Max Moroz} and {Martin Barbella} and {Jonathan Metzman}},
+  year = {2019},
+  month = feb,
+  url = {https://security.googleblog.com/2019/02/open-sourcing-clusterfuzz.html},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/W2MFF7IW/open-sourcing-clusterfuzz.html}
+}
+
+@misc{google_serv,
+  title = {Google {{Testing Blog}}: {{Announcing OSS}}-{{Fuzz}}: {{Continuous Fuzzing}} for {{Open Source Software}}},
+  author = {{Mike Aizatsky} and {Kostya Serebryany} and {Oliver Chang} and {Abhishek Arya} and {Meredith Whittaker}},
+  year = {2016},
+  month = dec,
+  url = {https://testing.googleblog.com/2016/12/announcing-oss-fuzz-continuous-fuzzing.html},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/SFPZ49FM/announcing-oss-fuzz-continuous-fuzzing.html}
+}
+
+@misc{HOUSE_ref-github_repo,
+  title = {{{HOUSE}} Framework Repository},
+  author = {{Francisco Borja Garnelo Del Rio}},
+  year = {2021},
+  url = {https://github.com/b0rh/HOUSE},
+  abstract = {Git souce code repository},
+  keywords = {AFL++,bash,documentacion,layout,markdown,script,slurm}
+}
+
+@techreport{HPC_fuzzing,
+  title = {Program {{Fuzzing}} on {{High Performance Computing Resources}}.},
+  author = {Cioce, Christian R and Loffredo, Daniel George and Salim, Nasser J.},
+  year = {2019},
+  month = jan,
+  pages = {SAND2019-0674, 1492735},
+  doi = {10.2172/1492735},
+  url = {http://www.osti.gov/servlets/purl/1492735/},
+  urldate = {2021-03-27},
+  file = {/Users/bhr/Zotero/storage/PW7S8ENV/Cioce et al. - 2019 - Program Fuzzing on High Performance Computing Reso.pdf},
+  language = {en},
+  number = {SAND2019-0674, 1492735}
+}
+
+@techreport{HPC_fuzzing_multinode,
+  title = {Multi-{{Node Program Fuzzing}} on {{High Performance Computing Resources}}.},
+  author = {Cioce, Christian and Salim, Nasser and Rigdon, James and Loffredo, Daniel},
+  year = {2020},
+  month = aug,
+  pages = {SAND2020-8215, 1650237, 690013},
+  doi = {10.2172/1650237},
+  url = {https://www.osti.gov/servlets/purl/1650237/},
+  urldate = {2021-03-27},
+  file = {/Users/bhr/Zotero/storage/KVV4HPQ5/Cioce et al. - 2020 - Multi-Node Program Fuzzing on High Performance Com.pdf},
+  language = {en},
+  number = {SAND2020-8215, 1650237, 690013}
+}
+
+@misc{HPC_Leon,
+  title = {{SCAYLE}},
+  Author ={Fundaci\'on Centro de Supercomputaci\'on Castilla}} y {{Le\'on},
+  url = {https://www.scayle.es/},
+  urldate = {2021-03-14},
+  file = {/Users/bhr/Zotero/storage/XYNILDB4/www.scayle.es.html}
+}
+
+@misc{HPC_tool_slurm,
+  title = {Slurm {{Workload Manager}}},
+  author = {SchedMD LLC},
+  url = {https://slurm.schedmd.com/},
+  urldate = {2021-03-14},
+  file = {/Users/bhr/Zotero/storage/PLFLYMXM/slurm.schedmd.com.html}
+}
+
+@article{IEEE_SW_standar,
+  title = {{{IEEE Standard Glossary}} of {{Software Engineering Terminology}}},
+  author = {{IEEE Communications Society}},
+  year = {1990},
+  volume = {121990},
+  pages = {1},
+  doi = {10.1109/IEEESTD.1990.101064},
+  url = {http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=159342},
+  abstract = {Describes the IEEE Std 610.12-1990, IEEE standard glossary of software engineering terminology, which identifies terms currently in use in the field of software engineering. Standard definitions for those terms are established.},
+  file = {/Users/bhr/Zotero/storage/3QL6T5ZY/IEEE Communications Society - 1990 - IEEE Standard Glossary of Software Engineering Terminology.pdf},
+  isbn = {155937067X},
+  journal = {Office},
+  keywords = {definitions,dictionary,glossary,software engineering,terminology},
+  number = {1}
+}
+
+@article{inicio_fuzzing,
+  title = {An Empirical Study of the Reliability of {{UNIX}} Utilities},
+  author = {Miller, Barton P. and Fredriksen, Louis and So, Bryan},
+  year = {1990},
+  month = dec,
+  volume = {33},
+  pages = {32--44},
+  issn = {0001-0782, 1557-7317},
+  doi = {10.1145/96267.96279},
+  url = {https://dl.acm.org/doi/10.1145/96267.96279},
+  urldate = {2021-03-13},
+  abstract = {Operating system facilities, such as the kernel and utility programs, are typically assumed to be reliable. In our recent experiments, we have been able to crash 25-33\% of the utility programs on any version of UNIX that was tested. This report describes these tests and an analysis of the program bugs that caused the crashes.},
+  annotation = {437 citations (Crossref) [2021-03-13] 932 citations (Semantic Scholar/DOI) [2021-03-13]},
+  file = {/Users/bhr/Zotero/storage/HDA8WVG2/Miller et al. - 1990 - An empirical study of the reliability of UNIX util.pdf},
+  journal = {Communications of the ACM},
+  language = {en},
+  number = {12}
+}
+
+@misc{ISO_stand_computer-data,
+  title = {{{ISO}}/{{IEC}} 2382:2015(En) {{Information}} Technology \textemdash{} {{Vocabulary}}},
+  year = {2015},
+  publisher = {{ISO/IEC}},
+  url = {https://www.iso.org/obp/ui/#iso:std:iso-iec:2382:ed-1:v1:en},
+  urldate = {2021-03-14}
+}
+
+@misc{Linux_AppArmor,
+  title = {Protect Your Applications with {{AppArmor}} - {{Linux}}.Com},
+  author = {{Chris Brown}},
+  year = {2006},
+  month = aug,
+  url = {https://www.linux.com/news/protect-your-applications-apparmor/},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/GJ6X8IFY/protect-your-applications-apparmor.html}
+}
+
+@misc{microsoft_fuzz,
+  title = {Microsoft {{Security Risk Detection}} ("{{Project Springfield}}") - {{Microsoft Research}}},
+  author = {{Microsoft Research}},
+  year = {2015},
+  month = jan,
+  url = {https://www.microsoft.com/en-us/research/project/project-springfield/},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/BEPCU4G4/project-springfield.html}
+}
+
+@misc{microsoft_srv,
+  title = {Microsoft {{Security Risk Detection}}},
+  author = {{Microsoft}},
+  url = {https://www.microsoft.com/en-us/security-risk-detection/},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/46P8DXU9/security-risk-detection.html}
+}
+
+@misc{microsoft_tool_azure,
+  title = {{{GitHub}} - Microsoft/Onefuzz: {{A}} Self-Hosted {{Fuzzing}}-{{As}}-{{A}}-{{Service}} Platform},
+  author = {{Microsoft}},
+  url = {https://github.com/microsoft/onefuzz},
+  urldate = {2021-03-28},
+  file = {/Users/bhr/Zotero/storage/9FNF4EQA/onefuzz.html}
+}
+
+@misc{NSA_SELinux,
+  title = {Security-{{Enhanced Linux}}},
+  author = {{NSA}},
+  year = {2008},
+  url = {https://web.archive.org/web/20200915000700/https://www.nsa.gov/What-We-Do/Research/SELinux/},
+  urldate = {2020-09-15},
+  file = {/Users/bhr/Zotero/storage/FIIDGCBM/SELinux.html}
+}
+
+@misc{SDL_WOW,
+  title = {Secure {{Software Development Life Cycle Processes}}},
+  author = {{Nooper Davis}},
+  year = {2013},
+  month = jul,
+  abstract = {This article presents overview information about existing processes, standards, life-cycle models, frameworks, and methodologies that support or could support secure software development. The initial report issued in 2006 has been updated to reflect changes.},
+  file = {/Users/bhr/Zotero/storage/MLVQDXQ3/Davis - Secure Software Development Life Cycle Processes.pdf},
+  language = {en}
+}
+
+@misc{slurm_doc-elastic_aws_gc,
+  title = {Cloud {{Scheduling Guide}}},
+  author = {{SchedMD}},
+  url = {https://slurm.schedmd.com/elastic_computing.html},
+  abstract = {Overview Slurm has the ability to support a cluster that grows and shrinks on demand, typically relying upon a service such as Amazon Elastic Computing Cloud (Amazon EC2) and Google Cloud Platform for resources.},
+  file = {/Users/bhr/Zotero/storage/854B9BUL/SchedMD - Unknown - Cloud Scheduling Guide.html}
+}
+
+@misc{src_tool_codeql,
+  title = {{{CodeQL}}},
+  author = {{GitHub Security Lab}},
+  url = {https://securitylab.github.com/tools/codeql/},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/MN848KF2/codeql.html},
+  journal = {CodeQL - GitHub Security Lab}
+}
+
+@misc{src_tool_list-NIST,
+  title = {Source {{Code Security Analyzers}}},
+  author = {{NIST}},
+  url = {https://samate.nist.gov/index.php/Source_Code_Security_Analyzers.html},
+  urldate = {2021-03-13},
+  file = {/Users/bhr/Zotero/storage/KGMPUZ49/Source_Code_Security_Analyzers.html},
+  journal = {Source Code Security Analyzers - SAMATE}
+}
+
+@misc{sut_coreutils,
+  title = {Coreutils},
+  author = {{GNU}},
+  url = {https://www.gnu.org/software/coreutils/coreutils.html},
+  urldate = {2021-03-14},
+  file = {/Users/bhr/Zotero/storage/CAXYAG2Z/coreutils.html},
+  journal = {Coreutils - GNU core utilities}
+}
+
+@misc{SW_ref_metafora,
+  title = {Metaphors in Software Development},
+  author = {{Gerbrand van Dieijen}},
+  year = {2010},
+  month = jul,
+  url = {https://xebia.com/blog/metaphors-in-software-development/},
+  urldate = {2021-03-27},
+  file = {/Users/bhr/Zotero/storage/VPCL34PB/metaphors-in-software-development.html}
+}
+
+@misc{xdr_ref,
+  title = {Comparing Endpoint Security: {{EPP}} vs. {{EDR}} vs. {{XDR}} - {{Infosec Resources}}},
+  author = {{Gilad Maayan}},
+  year = {2020},
+  month = dec,
+  url = {https://resources.infosecinstitute.com/topic/comparing-endpoint-security-epp-vs-edr-vs-xdr/},
+  urldate = {2021-03-14},
+  file = {/Users/bhr/Zotero/storage/B9W6CDYL/comparing-endpoint-security-epp-vs-edr-vs-xdr.html}
+}
+
+
+@article{camargo2018towards,
+  title={Towards high performance robotic computing},
+  author={Camargo-Forero, Leonardo and Royo, Pablo and Prats, Xavier},
+  journal={Robotics and Autonomous Systems},
+  volume={107},
+  pages={167--181},
+  year={2018},
+  publisher={Elsevier}
+}
+
+
+@article{liu2019novel,
+  title={A novel cloud platform for service robots},
+  author={Liu, Jin and Zhou, Fengyu and Yin, Lei and Wang, Yugang},
+  journal={IEEE Access},
+  volume={7},
+  pages={182951--182961},
+  year={2019},
+  publisher={IEEE}
+}
+
+
+@article{CAMARGOFORERO2019187,
+title = {The ARCHADE: Ubiquitous Supercomputing for robotics. Part I: Philosophy},
+journal = {Robotics and Autonomous Systems},
+volume = {114},
+pages = {187-198},
+year = {2019},
+issn = {0921-8890},
+doi = {https://doi.org/10.1016/j.robot.2019.01.006},
+url = {https://www.sciencedirect.com/science/article/pii/S0921889018305190},
+author = {Leonardo Camargo-Forero and Pablo Royo and Xavier Prats},
+keywords = {Ubiquitous supercomputing, The ARCHADE, Ubiquitous supercomputing ontology, High performance robotic computing - HPRC, HPRC cluster, Parallel robotic computing node - PRCN, General-purpose computing mission},
+abstract = {In this work, we introduce Ubiquitous Supercomputing for robotics with the objective of opening our imagination to the development of new powerful heterogeneous multi-robot systems able to perform all kind of missions. Supercomputing, also known as High Performance computing (HPC) is the tool that allows us to predict the weather, understand the origins of the universe, create incredibly realistic fantasy movies, send personalized advertisement to millions of users worldwide and much more. Robotics has been mostly absent in its use of HPC but some previous works have lightly flirted with it. With the findings presented in here, we propose a ubiquitous supercomputing ontology, which allows describing systems made up of robots, traditional HPC infrastructures, sensors, actuators and people and exhibiting scalability, user-transparency and ultimately higher computing efficiency. Moreover, we present a technology called The ARCHADE, which facilitates the development, implementation and operation of such systems, and we propose a mechanism to define and automatize missions carried out by ubiquitous supercomputing systems. As a proof of concept, we present a system depicted as Tigers VS Hunters, which illustrates the potential of this technology. The results presented in here are part of a two series work introducing The ARCHADE. This first delivery presents its philosophy and main features. Correspondingly the second part will present a set of use cases and a complete performance benchmark. Supercomputing is part of our lives and it can be found in many research and industrial endeavors. With the ubiquitous supercomputing ontology and The ARCHADE, supercomputing will become part of robotics as well, bringing it therefore everywhere.}
+}
+
+@inproceedings{arumugam2010davinci,
+  title={DAvinCi: A cloud computing framework for service robots},
+  author={Arumugam, Rajesh and Enti, Vikas Reddy and Bingbing, Liu and Xiaojun, Wu and Baskaran, Krishnamoorthy and Kong, Foong Foo and Kumar, A Senthil and Meng, Kang Dee and Kit, Goh Wai},
+  booktitle={2010 IEEE international conference on robotics and automation},
+  pages={3084--3089},
+  year={2010},
+  organization={IEEE}
+}
+
+
+@article{mayoral2020devsecops,
+  title={Devsecops in robotics},
+  author={Mayoral-Vilches, V{\'\i}ctor and Garc{\'\i}a-Maestro, Nuria and Towers, McKenna and Gil-Uriarte, Endika},
+  journal={arXiv preprint arXiv:2003.10402},
+  year={2020}
+}
+
+
+@inproceedings{woodlief2021fuzzing,
+  title={Fuzzing mobile robot environments for fast automated crash detection},
+  author={Woodlief, Trey and Elbaum, Sebastian and Sullivan, Kevin},
+  booktitle={2021 IEEE International Conference on Robotics and Automation (ICRA)},
+  pages={5417--5423},
+  year={2021},
+  organization={IEEE}
+}
+
+@inproceedings{xie2022rozz,
+  title={ROZZ: Property-based Fuzzing for Robotic Programs in ROS},
+  author={Xie, Kai-Tao and Bai, Jia-Ju and Zou, Yong-Hao and Wang, Yu-Ping},
+  booktitle={2022 International Conference on Robotics and Automation (ICRA)},
+  pages={6786--6792},
+  year={2022},
+  organization={IEEE}
+}
+
+@article{wang2020systematic,
+  title={A systematic review of fuzzing based on machine learning techniques},
+  author={Wang, Yan and Jia, Peng and Liu, Luping and Huang, Cheng and Liu, Zhonglin},
+  journal={PloS one},
+  volume={15},
+  number={8},
+  pages={e0237749},
+  year={2020},
+  publisher={Public Library of Science San Francisco, CA USA}
+}
+
+
+@article{franchi2021webots,
+  title={Webots. HPC: A Parallel Robotics Simulation Pipeline for Autonomous Vehicles on High Performance Computing},
+  author={Franchi, Matt},
+  journal={arXiv preprint arXiv:2108.00485},
+  year={2021}
+}
+@incollection{franchi2022webots,
+  title={Webots. HPC: A Parallel Simulation Pipeline for Autonomous Vehicles},
+  author={Franchi, Matt and Kahn, Rebecca and Chowdhury, Mashrur and Khan, Sakib and Kennedy, Ken and Ngo, Linh and Apon, Amy},
+  booktitle={Practice and Experience in Advanced Research Computing},
+  pages={1--4},
+  year={2022}
+}
+
+
+@inproceedings{matellan2021role,
+  title={The Role of Cybersecurity and HPC in the Explainability of Autonomous Robots Behavior},
+  author={Matell{\'a}n, Vicente and Rodr{\'\i}guez-Lera, Francisco-J and Guerrero-Higueras, {\'A}ngel-M and Rico, Francisco-Mart{\'\i}n and Gin{\'e}s, Jonatan},
+  booktitle={2021 IEEE International Conference on Advanced Robotics and Its Social Impacts (ARSO)},
+  pages={1--5},
+  year={2021},
+  organization={IEEE}
+}
+
+@inproceedings{brewer2022scalable,
+  title={Scalable Interactive Autonomous Navigation Simulations on HPC},
+  author={Brewer, Wesley and Bretheim, Joel and Kaniarz, John and Song, Peilin and Gates, Burhman},
+  booktitle={2022 IEEE High Performance Extreme Computing Conference (HPEC)},
+  pages={1--7},
+  year={2022},
+  organization={IEEE}
+}
+
+
+@article{CAMARGOFORERO2018167,
+title = {Towards high performance robotic computing},
+journal = {Robotics and Autonomous Systems},
+volume = {107},
+pages = {167-181},
+year = {2018},
+issn = {0921-8890},
+doi = {https://doi.org/10.1016/j.robot.2018.05.011},
+url = {https://www.sciencedirect.com/science/article/pii/S092188901830232X},
+author = {Leonardo Camargo-Forero and Pablo Royo and Xavier Prats},
+keywords = {High performance robotic computing — HPRC, General-purpose computing robot, HPC cluster of robots, HPRC cluster, Parallel robotic computing node — PRCN, General-purpose computing mission},
+abstract = {Embedding a robot with a companion computer is becoming a common practice nowadays. Such computer is installed with an operatingsystem, often a Linux distribution. Moreover, Graphic Processing Units (GPUs) can be embedded on a robot, giving it the capacity of performing complex on-board computing tasks while executing a mission. It seems that a next logical transition, consist of deploying a cluster of computers among embedded computing cards. With this approach, a multi-robot system can be set as a High Performance Computing (HPC) cluster. The advantages of such infrastructure are many, from providing higher computing power up to setting scalable multi-robot systems. While HPC has been always seen as a speeding-up tool, we believe that HPC in the world of robotics can do much more than simply accelerating the execution of complex computing tasks. In this paper, we introduce the novel concept of High Performance Robotic Computing — HPRC, an augmentation of the ideas behind traditional HPC to fit and enhance the world of robotics. As a proof of concept, we introduce novel HPC software developed to control the motion of a set of robots using the standard parallel MPI (Message Passing Interface) library. The parallel motion software includes two operation modes: Parallel motion to specific target and swarm-like behavior. Furthermore, the HPC software is virtually scalable to control any quantity of moving robots, including Unmanned Aerial Vehicles, Unmanned Ground Vehicles, etc.}
+}
+
+
+@article{kurtzer2017singularity,
+  title={Singularity: Scientific containers for mobility of compute},
+  author={Kurtzer, Gregory M and Sochat, Vanessa and Bauer, Michael W},
+  journal={PloS one},
+  volume={12},
+  number={5},
+  pages={e0177459},
+  year={2017},
+  publisher={Public Library of Science San Francisco, CA USA}
+}
+
+
+@article{garnelo202139,
+  title={39 HOUSE: Marco de trabajo modular de arquitectura escalable y desacoplada para el uso de t{\'e}cnicas de fuzzing en HPC},
+  author={Garnelo del R{\'\i}o, Francisco Borja and Rodr{\'\i}guez Lera, Francisco J and Esteban Costales, Gonzalo and Fern{\'a}ndez Llamas, Camino and Matell{\'a}n Olivera, Vicente},
+  year={2021},
+  publisher={Ediciones de la Universidad de Castilla-La Mancha}
+}
+
+
+@inproceedings{Seulbae:2022,
+author = {Kim, Seulbae and Kim, Taesoo},
+title = {RoboFuzz: Fuzzing Robotic Systems over Robot Operating System (ROS) for Finding Correctness Bugs},
+year = {2022},
+isbn = {9781450394130},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3540250.3549164},
+doi = {10.1145/3540250.3549164},
+abstract = {Robotic systems are becoming an integral part of human lives. Responding to the increased demands for robot productions, Robot Operating System (ROS), an open-source middleware suite for robotic development, is gaining traction by providing practical tools and libraries for quickly developing robots. In this paper, we are concerned with a relatively less-tested class of bugs in ROS and ROS-based robotic systems, called semantic correctness bugs, including the violation of specification, violation of physical laws, and cyber-physical discrepancy. These bugs often stem from the cyber-physical nature of robotic systems, in which noisy hardware components are intertwined with software components, and thus cannot be detected by existing fuzzing approaches that mostly focus on finding memory-safety bugs. We propose RoboFuzz, a feedback-driven fuzzing framework that integrates with ROS and enables testing of the correctness bugs. RoboFuzz features (1) data type-aware mutation for effectively stressing data-driven ROS systems, (2) hybrid execution for acquiring robotic states from both real-world and a simulator, capturing unforeseen cyber-physical discrepancies, (3) an oracle handler that identifies correctness bugs by checking the execution states against predefined correctness oracles, and (4) a semantic feedback engine for providing augmented guidance to the input mutator, complementing classic code coverage-based feedback, which is less effective for distributed, data-driven robots. By encoding the correctness invariants of ROS and four ROS-compatible robotic systems into specialized oracles, RoboFuzz detected 30 previously unknown bugs, of which 25 are acknowledged and six have been fixed.},
+booktitle = {Proceedings of the 30th ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering},
+pages = {447–458},
+numpages = {12},
+keywords = {Correctness bugs, Semantic feedback-driven fuzzing, Robot Operating System 2 (ROS 2)},
+location = {Singapore, Singapore},
+series = {ESEC/FSE 2022}
+}
+
+
