@@ -1,0 +1,31 @@
+
+\begin{figure}[!ht]
+  \centering
+  % centering debería centrar adecuadamente la figura, así que, por norma general, no es necesario utilizar hspace
+  %\hspace*{-135pt}
+  \begin{tikzpicture}[node distance = 2cm, auto,
+  % En un paper, las figuras suelen tener una fuente de tipo sin serifa (para
+  % distinguirlas del texto). Además, todos elementos de texto deberían tener
+  % el mismo tamaño de fuente)
+  font=\large\sffamily,
+  % Estas dos opciones de tikzpicture son para poder reescalar la imagen
+  transform shape, scale=0.45
+  ]
+    % nodes
+    \node [blockWH] (prep_env) {Preparar entorno de trabajo};
+    \node [decisionBL, below of = prep_env, node distance = 3.5cm] (Hay_src) {¿Hay código fuente disponible?};
+  
+
+    % edges
+    \path [line] (prep_env) -- (Hay_src);
+
+  % Leyenda cuqui
+  \node [left of={prep_env},xshift=-2cm,blockWH,rotate=90,text width=2.2cm] (center:Common) {Común};
+
+
+  %\node [above of={center:Common}] {Phases/Steps};
+
+  \end{tikzpicture}
+  %\caption{ Diagrama de flujo para describir el funcionamiento de HOUSE según las diferentes fases de fuzzing. }
+  \label{fig:HOUSE_flow}
+\end{figure}
