@@ -1,0 +1,108 @@
+// Editado en https://dreampuf.github.io/GraphvizOnline 
+digraph graphname {
+    graph [bb="0,0,595,842", // Tamaño de A4 en puntos (595x842)
+        compound=True,
+        rankdir=LR, // Cambiado de LR (izquierda a derecha) a TB (arriba a abajo) para formato vertical
+        ranksep=0,
+        nodesep=0.5,
+        fontsize=16
+    ];
+    node [
+        fontsize=16, // Tamaño de fuente para los nodos
+        label="\N"
+    ];
+    edge [
+        fontsize=16 // Tamaño de fuente para las aristas
+    ];
+
+    subgraph cluster___llama {
+        graph [label="/llama",
+            style=bold,
+            fontsize=16
+        ];
+        subgraph cluster___llama__generate_response {
+            graph [label="/llama/generate_response",
+                style=bold,
+                fontsize=16
+            ];
+            subgraph cluster___llama__generate_response___action {
+                graph [label="/llama/generate_response/_action",
+                    style=bold,
+                    fontsize=16
+                ];
+                t___llama__generate_response___action__status [URL=topic_3A__llama__generate_response___action__status,
+                    label="/llama/generate_response/_action/status",
+                    shape=box,
+                    tooltip="topic:/llama/generate_response/_action/status",
+                    width=4.2083];
+                t___llama__generate_response___action__feedback [URL=topic_3A__llama__generate_response___action__feedback,
+                    label="/llama/generate_response/_action/feedback",
+                    shape=box,
+                    tooltip="topic:/llama/generate_response/_action/feedback",
+                    width=4.4861];
+            }
+        }
+        n___llama__llama_node [URL=__llama__llama_node,
+            label="/llama/llama_node",
+            shape=ellipse,
+            tooltip="/llama/llama_node",
+            width=2.6178];
+        n___llama__llama_node -> t___llama__generate_response___action__status;
+        n___llama__llama_node -> t___llama__generate_response___action__feedback;
+    }
+
+    n___response_generator_node [URL=__response_generator_node,
+        label="/response_generator_node",
+        shape=ellipse,
+        tooltip="/response_generator_node",
+        width=3.683];
+    t___llama__generate_response___action__status -> n___response_generator_node;
+    t___llama__generate_response___action__feedback -> n___response_generator_node;
+
+    t___robot_description [URL=topic_3A__robot_description,
+        label="/robot_description",
+        shape=box,
+        tooltip="topic:/robot_description",
+        width=2.0278];
+    t___joint_states [URL=topic_3A__joint_states,
+        label="/joint_states",
+        shape=box,
+        tooltip="topic:/joint_states",
+        width=1.4444];
+    n___robot_state_publisher [URL=__robot_state_publisher,
+        label="/robot_state_publisher",
+        shape=ellipse,
+        tooltip="/robot_state_publisher",
+        width=3.1775];
+    t___joint_states -> n___robot_state_publisher;
+
+    n___gazebo [URL=__gazebo,
+        label="/gazebo",
+        shape=ellipse,
+        tooltip="/gazebo",
+        width=1.2818];
+    n___turtlebot3_joint_state [URL=__turtlebot3_joint_state,
+        label="/turtlebot3_joint_state",
+        shape=ellipse,
+        tooltip="/turtlebot3_joint_state",
+        width=3.1775];
+    n___turtlebot3_joint_state -> t___joint_states;
+
+    n___turtlebot3_imu [URL=__turtlebot3_imu,
+        label="/turtlebot3_imu",
+        shape=ellipse,
+        tooltip="/turtlebot3_imu",
+        width=2.3109];
+    n___turtlebot3_laserscan [URL=__turtlebot3_laserscan,
+        label="/turtlebot3_laserscan",
+        shape=ellipse,
+        tooltip="/turtlebot3_laserscan",
+        width=3.0331];
+    n___robot_state_publisher -> t___robot_description;
+
+    n___turtlebot3_diff_drive [URL=__turtlebot3_diff_drive,
+        label="/turtlebot3_diff_drive",
+        shape=ellipse,
+        tooltip="/turtlebot3_diff_drive",
+        width=3.0331];
+}

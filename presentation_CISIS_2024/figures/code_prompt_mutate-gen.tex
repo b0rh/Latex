@@ -1,0 +1,26 @@
+
+%\begin{figure}[htbp]
+\begin{figure}[H]
+    \centering
+    %%\begin{minted}[breaklines, fontsize=\scriptsize]{python}
+    \begin{minted}[breaklines,bgcolor=ultralightgray,  fontsize=\scriptsize]{python}
+    ..
+    # Generates a random integer number
+    max_length = 6
+    max_tokens = int(max_length * 2)
+    description = "Generate a random integer compatible with the python3 int type"
+
+    value = int(run_prompt(f"length={max_length} description={description}", max_tokens, max_length))
+    ..
+    ..
+    # Mutates the string <value> at position <pos> and save result in <new_value>
+    max_length = len(value)
+    max_tokens = int(max_length * 2)
+    description = f"Replace the character at position {pos} with another randomly generated character in this string '{value}'"
+
+    new_value = str(run_prompt(f"length={max_length} description={description}", max_tokens, max_length))
+    ..
+    \end{minted}
+    \captionof{listing}{Code snippets from the genai.py module where the prompt is constructed.}
+    \label{lis:code_prompt_mutate-gen}
+\end{figure}

@@ -1,0 +1,31 @@
+
+%\begin{figure}[htbp]
+\begin{figure}[H]
+    \centering
+    %%\begin{minted}[breaklines, fontsize=\scriptsize]{python}
+    \begin{minted}[breaklines,bgcolor=ultralightgray, fontsize=\scriptsize]{yaml}
+You are a text string generator. Limit yourself to the requested length in characters defined as an integer in the length field and to the description of the content to be generated defined by the description field as text. Both fields are in the instruction and their value is preceded by an = symbol.
+
+### Instruction:
+length=10 description=Fill in with the letter a
+### Response:
+aaaaaaaaaa
+
+### Instruction:
+length=7 description=Starts at 0 and completes with number incrementing from one to 1 until the string is complete.
+### Response:
+0123456
+
+### Instruction:
+length=8 description=Replace the character at position 4 with another randomly generated character in this string 'abcd'"
+### Response:
+abce
+
+### Instruction:
+length=8 description=Fills with random characters
+### Response:
+azf2-+d6
+    \end{minted}
+    \captionof{listing}{alpaca.txt configuration.}
+    \label{lis:conf_alapaca.txt}
+\end{figure}
