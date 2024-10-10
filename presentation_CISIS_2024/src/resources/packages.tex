@@ -111,7 +111,8 @@ GreenBars/.style={fill=green!20, bar width=0.25}
 %%% Paquete para usar simbolos y scripts de dibujado
 \usepackage{tikz}
 \def\checkmark{\tikz\fill[scale=0.4](0,.35) -- (.25,0) -- (1,.7) -- (.25,.15) -- cycle;} 
-\usetikzlibrary{shapes,arrows}
+%\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{shapes.geometric, arrows}
 
 % Define Block styles
 \tikzstyle{decisionBL} = [diamond, draw, fill=blue!20,text width=10em, text badly centered, node distance=3cm, inner sep=0pt]
@@ -122,6 +123,10 @@ GreenBars/.style={fill=green!20, bar width=0.25}
 \tikzstyle{blockWH} = [rectangle, draw, fill=white!20, text width=9em, text centered, rounded corners, minimum height=4em]
 \tikzstyle{line} = [draw, -latex']
 \tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=4.5cm,minimum height=4em]
+
+% Define el diagrama de procesos
+\tikzstyle{process} = [rectangle, minimum width=0.5cm, minimum height=0.25cm, text centered, draw=black, fill=orange!30]
+\tikzstyle{arrow} = [thick,->,>=stealth]
 
 %%% Para usar ficheros tex de infografias Inkscape
 \usepackage{pstricks}

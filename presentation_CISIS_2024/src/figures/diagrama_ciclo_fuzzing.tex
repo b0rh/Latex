@@ -1,0 +1,38 @@
+\begin{comment}
+    
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[node distance=2cm, auto]
+        \node (generate) [process] at (90:3cm) {\textbf{Generation} Test Data};
+        \node (execute) [process] at (18:3cm) {\textbf{Simulation} Execute Tests};
+        \node (monitor) [process] at (326:3cm) {\textbf{Monitor} Behavior};
+        \node (analyze) [process] at (214:3cm) {\textbf{Validation} Analyze Results};
+        \node (report) [process] at (162:3cm) {\textbf{Validation} Report Bugs};
+
+        \draw [arrow] (generate) -- (execute);
+        \draw [arrow] (execute) -- (monitor);
+        \draw [arrow] (monitor) -- (analyze);
+        \draw [arrow] (analyze) -- (report);
+        \draw [arrow] (report) -- (generate);
+    \end{tikzpicture}
+    \caption{Fuzzing Testing Cycle Diagram}
+\end{figure}
+\end{comment}
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[node distance=2cm, auto]
+        \node (generate) [process, fill=red!30] at (90:3cm) {1. \textbf{Generation} Test Data};
+        \node (execute) [process, fill=orange!30] at (18:3cm) {2. \textbf{Simulation} Execute Tests};
+        \node (monitor) [process, fill=yellow!30] at (326:3cm) {3. \textbf{Monitor} Behavior};
+        \node (analyze) [process, fill=green!30] at (214:3cm) {4. \textbf{Validation} Analyze Results};
+        \node (report) [process, fill=blue!30] at (162:3cm) {5. \textbf{Validation} Report Bugs};
+
+        \draw [arrow] (generate) -- (execute);
+        \draw [arrow] (execute) -- (monitor);
+        \draw [arrow] (monitor) -- (analyze);
+        \draw [arrow] (analyze) -- (report);
+        \draw [arrow] (report) -- (generate);
+    \end{tikzpicture}
+    \caption{Fuzzing Testing Cycle Diagram}
+\end{figure}

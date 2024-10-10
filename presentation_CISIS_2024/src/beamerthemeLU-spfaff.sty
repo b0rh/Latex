@@ -16,8 +16,9 @@
 \newcommand{\giventitleimage}{}
 
 
-%Babel support
-\providecommand*{\lulogo}{./img/logocisis.png}
+% No se esta usando el lulogo para definir los logos se hace en cada punto segun el tamaño y ubicacion
+%\providecommand*{\lulogo}{./img/logos_peque.png}
+
 \AtBeginDocument{
 
 }
@@ -28,8 +29,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \useoutertheme[width=.15\paperwidth]{sidebar}
 \setlength{\beamer@headheight}{.165\paperheight}
-\pgfdeclareimage[width=.13\paperwidth]{small-logo}{\lulogo}
-%\pgfdeclareimage[width=.5\paperwidth]{main-logo}{\lulogo}
+
+%%% Logo peque del indice a la izquierda abajo
+\pgfdeclareimage[width=.09\paperwidth]{small-logo}{./img/logocisis_logos.png}
 %\pgfdeclareimage[width=.33\paperwidth]{large-corner}{large-corner}
 %\pgfdeclareimage[height=\beamer@headheight]{small-corner}{small-corner}
 \setbeamertemplate{sidebar left}{%
@@ -121,8 +123,9 @@
 \fi
 
 %draw logos
-%\node at ($(\paperwidth,0)-(1.1cm,.1cm)$) {\includegraphics[scale=.6]{\lulogo}};
-\node[anchor=north west] at ($(0,\paperheight)-(0cm,0cm)$) {\includegraphics[scale=.45]{\lulogo}};
+
+%% Logo grande primera diapositiva
+\node[anchor=north west] at ($(0,\paperheight)-(0cm,0cm)$) {\includegraphics[scale=.55]{./img/logocisis.png}};
 \end{tikzpicture}
 }
 
